@@ -7,7 +7,17 @@ Hi! I'm Aditya, an EE undergrad at IIT Delhi. This repository contains my person
 
 ## 📊 Progress Summary
 
-> ✅ Completed: **142 / 455**  **31%**
+> ✅ Completed: **142 / 455**  (⏳ 31.3%)_
+> ### 📊 DSA Progress
+
+| Difficulty | Solved | Total | Progress |
+|------------|--------|-------|----------|
+| Easy       | 67     | 131   | ✅ 51.1%  |
+| Medium     | 61     | 187   | ✅ 32.6%  |
+| Hard       | 14     | 136   | ✅ 10.3%  |
+
+ 
+
 > 🧩 Topics Completed: Arrays, Sorting, Linked Lists, etc.  
 > 🎯 Goal: Complete entire sheet by semester 4 (with quality and revision)
 
