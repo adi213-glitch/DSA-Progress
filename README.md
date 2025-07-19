@@ -251,23 +251,6 @@ Hi! I'm Aditya, an EE undergrad at IIT Delhi. This repository contains my person
 
 ---
 
-### 🛠 How to Use This
-- Mark your progress with ✅ as you solve problems.
-- Push this file to your GitHub DSA repo to track your consistency.
-- Keep revising steps you’ve completed.
-
----
-
-Made with 💻 by [YourName]
-
-## 🧠 How to Use This Repo(Coming Soon...)
-
-Each folder contains solutions for problems from a specific topic. Problems are named clearly with a short description and are written in C++.
-
-> You can click through the folders above or use GitHub search with keywords like "Kadane" or "Binary Search" to find specific problems.
-
----
-
 ## ⚒️ Tools & Languages
 
 - Language: C++
