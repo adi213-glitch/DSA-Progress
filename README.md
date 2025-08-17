@@ -7,14 +7,14 @@ Hi! I'm Aditya, an EE undergrad at IIT Delhi. This repository contains my person
 
 ## 📊 Progress Summary
 
-> ✅ Completed: **142 / 455**  (⏳ 31.3%)_
+> ✅ Completed: **192 / 455**  (⏳ 42%)_
 > ### 📊 DSA Progress
 
 | Difficulty | Solved | Total | Progress |
 |------------|--------|-------|----------|
-| Easy       | 67     | 131   | ✅ 51.1%  |
-| Medium     | 61     | 187   | ✅ 32.6%  |
-| Hard       | 14     | 136   | ✅ 10.3%  |
+| Easy       | 84     | 131   | ✅ 64.1%  |
+| Medium     | 84     | 187   | ✅ 45%  |
+| Hard       | 24     | 136   | ✅ 17.6%  |
 
  
 
@@ -119,7 +119,7 @@ Hi! I'm Aditya, an EE undergrad at IIT Delhi. This repository contains my person
 ---
 
 ## 📘 Step 9: Stack and Queue
-> Status: ✅ 25/30
+> Status: ✅ 30/30
 
 ### Subtopics:
 - Stack & Queue basics
@@ -132,7 +132,7 @@ Hi! I'm Aditya, an EE undergrad at IIT Delhi. This repository contains my person
 ---
 
 ## 📘 Step 10: Sliding Window + Two Pointers
-> Status: ⬜ 0/12
+> Status: ✅ 11/12
 
 ### Subtopics:
 - Fixed window problems
@@ -168,7 +168,7 @@ Hi! I'm Aditya, an EE undergrad at IIT Delhi. This repository contains my person
 ---
 
 ## 📘 Step 13: Binary Trees
-> Status: ⬜ 0/39
+> Status: ✅ 34/39
 
 ### Subtopics:
 - Pre, In, Post-order
