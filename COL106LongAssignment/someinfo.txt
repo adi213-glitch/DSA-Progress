@@ -1,0 +1,34 @@
+did the ta allow stdexcpet
+
+
+
+Show thinking
+Based on a careful review of the assignment rules and the TA's clarifications, yes, using <stdexcept> is allowed.
+
+Here is the reasoning, which you can use for your viva:
+
+The Reasoning
+The rule in the assignment is very specific:
+
+"Note: You must implement the above data structures (along with the operations needed for this project) yourself from scratch..."
+
+The prohibited libraries are those that directly implement the required data structures: Trees, HashMaps, and Heaps.
+
+std::map and std::unordered_map are forbidden because they are library versions of a HashMap.
+
+std::priority_queue is forbidden because it is a library version of a Heap.
+
+The <stdexcept> header is a standard C++ library for error handling. It is not a data structure. The TA explicitly allowed the use of other standard libraries that are not data structures, such as <vector>, <string>, <ctime>, and <sstream>. Using <stdexcept> falls into this same category of allowed, general-purpose tools.
+
+Why Using throw is Good Design (Viva Explanation)
+Using throw out_of_range(...) is a modern and robust way to handle critical errors. If an examiner asks why you chose this approach, here’s a strong explanation:
+
+"When a user tries to get the maximum element from an empty heap, it's an exceptional situation—an invalid operation. I had a few ways to handle this:
+
+Crash the program: This is a poor user experience.
+
+Return a default value: For a heap of File* pointers, I could return nullptr. However, this can hide bugs if the calling code forgets to check for nullptr.
+
+Print an error: This mixes the heap's logic with user interface logic, which is bad design. The heap shouldn't be responsible for printing things.
+
+I chose to throw an exception because it's the standard C++ way to signal that a function's contract has been violated. It cleanly separates error detection (in the heap) from error handling (which would be in the FileSystem or main function using a try...catch block). This makes the code safer and more modular."

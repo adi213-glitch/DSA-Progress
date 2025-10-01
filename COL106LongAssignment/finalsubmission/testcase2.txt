@@ -1,0 +1,49 @@
+CREATE f2
+CREATE f3
+INSERT f2 data_a
+
+INSERT f3 item_1
+SNAPSHOT f3 v1
+
+UPDATE f2 data_b
+RECENT_FILES 2
+INSERT f3 item_2
+ROLLBACK f3
+READ f3
+BIGGEST_TREES 2
+
+
+
+
+output 
+
+
+> CREATE f2
+File 'f2' created successfully.
+> CREATE f3
+File 'f3' created successfully.
+> INSERT f2 data_a
+Inserted content.
+> INSERT f3 item_1
+Inserted content.
+> SNAPSHOT f3 v1
+Snapshot created for 'f3' with version ID 1.
+> UPDATE f2 data_b
+Content updated for 'f2'.
+> RECENT_FILES 2
+--- 2 Most Recently Modified Files ---
+1. f2 (Modified: Sat Sep 20 01:27:43 2025)
+2. f3 (Modified: Sat Sep 20 01:27:30 2025)
+> INSERT f3 item_2
+Inserted content.
+> ROLLBACK f3
+Rolled back 'f3'. Active version is now 1.
+> READ f3
+item_1
+> BIGGEST_TREES 2
+--- 2 Files with Most Versions ---
+1. f3 (3 versions)
+2. f2 (2 versions)
+> exit
+Exiting file system.
+FileSystem destroyed. All files cleaned up.

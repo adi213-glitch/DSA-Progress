@@ -16,7 +16,7 @@ using namespace std;
 class Solution {
 public:
     int timetoburn(TreeNode* root, TreeNode* target) {
-        if (!root) return {};
+        if (!root) return 0;
 
         // Step 1: Build parent map with BFS
         unordered_map<TreeNode*, TreeNode*> parentMap;
@@ -71,7 +71,7 @@ public:
                 }
                 
             }
-            if(check==0) break;
+            if(bfsQueue.empty()) break;
             dist++;
         }
 

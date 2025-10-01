@@ -1,0 +1,43 @@
+CREATE f1
+INSERT f1 content_A
+UPDATE f1 content_B
+READ f1
+SNAPSHOT f1 v1
+(PAUSE FOR 2 SECONDS)
+UPDATE f1 content_C
+READ f1
+ROLLBACK f1 1
+READ f1
+BIGGEST_TREES 1
+
+
+
+
+
+output 
+
+
+> CREATE f1
+File 'f1' created successfully.
+> INSERT f1 content_A
+Inserted content.
+> UPDATE f1 content_B
+Content updated for 'f1'.
+> READ f1
+content_B
+> SNAPSHOT f1 v1
+Snapshot created for 'f1' with version ID 1.
+> UPDATE f1 content_C
+Content updated for 'f1'.
+> READ f1
+content_C
+> ROLLBACK f1 1
+Rolled back 'f1'. Active version is now 1.
+> READ f1
+content_B
+> BIGGEST_TREES 1
+--- 1 Files with Most Versions ---
+1. f1 (3 versions)
+> exit
+Exiting file system.
+FileSystem destroyed. All files cleaned up.
